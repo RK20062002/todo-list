@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Sky</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Book Sky</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Rish Dad Poor Dad</h2>
+            <h5>Robert</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus labore architecto tempora dolor rerum consectetur blanditiis quas. Aut tempore culpa, quis perspiciatis hic in itaque sint unde, maxime eum dolorem.
+            </p>
+            <button onclick="deletebtn(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form action="#">
+            <input id="book-title-input" type="text" placeholder="Book Title">
+            <input type="text" id="book-author-input" placeholder="Author Name">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book" onclick="addBook()">Add</button>
+            <button id="cancel-book" onclick="cancelbtn()">Cancel</button>
+        </form>
+    </div>
+
+    <button class="add-btn" id="add-popup" onclick="popup()">+</button>
+
+</body>
+
+</html>
